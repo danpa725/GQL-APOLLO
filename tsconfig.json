@@ -18,9 +18,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noImplicitAny": false
   },
   "include": [
     "src"
+  ],
+  "exclude": [ 
+    // npm 으로 설치한 모듈들을 import 가능하도록 설정
+    "node_modules"
   ]
 }
